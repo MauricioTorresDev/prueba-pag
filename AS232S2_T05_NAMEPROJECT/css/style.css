@@ -11,6 +11,7 @@
 
 }
 
+
 :root {
      --main-color1: #0C1B5C;
      --main-color2: #C31C22;
@@ -23,6 +24,8 @@
      --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+
+
 header {
      position: relative;
      width: 100%;
@@ -33,8 +36,6 @@ header {
      z-index: 1000;
      background: var(--white);
      box-shadow: var(--box-shadow);
-     display: flex;
-     justify-content: space-between;
      align-items: center;
      padding: 2rem 9%;
      font-family: var(--font-style-header1);
@@ -432,4 +433,206 @@ body.dark-mode {
      color: white;
      font-size: 16px;
      font-family: var(--font-style-header1);
+}
+
+/*NOSOTROS*/
+.titulo-nosotros {
+     width: 100vw;
+     height: 35vh;
+     display: flex;
+     align-items: center;
+     background: url(../img/fondoRpC.jpg);
+}
+
+.tituloN-texto h1 {
+     font-size: 60px;
+     margin-left: 250px;
+}
+
+hr {
+     height: 11px;
+     background-color: var(--main-color1);
+     border-color: var(--main-color1);
+}
+
+.puntos {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 130px;
+     margin-bottom: 130px;
+}
+
+.nosotros-puntos {
+     position: relative;
+     display: inline-block;
+     text-align: center;
+}
+
+.texto-nosotros {
+     padding-right: 30px;
+     padding-left: 30px;
+     color: rgb(255, 255, 255);
+     background-color: #033e97b9;
+     position: absolute;
+     top: 70%;
+     left: 30%;
+     transform: translate(-20%, -20%);
+}
+
+.texto-nosotros h2 {
+     margin: 20px;
+}
+
+.texto-nosotros p {
+     margin-bottom: 20px;
+     justify-content: center;
+     text-align: justify;
+}
+
+
+
+
+
+/* CSS */
+.button-64 {
+     align-items: center;
+     background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+     border: 0;
+     border-radius: 30px;
+     box-shadow: rgba(142, 51, 247, 0.2) 0 15px 20px -5px;
+     box-sizing: border-box;
+     color: #FFFFFF;
+     display: flex;
+     font-family: Phantomsans, sans-serif;
+     font-size: 14px;
+     justify-content: center;
+     line-height: 1.2em;
+     max-width: 70%;
+     min-width: 80px;
+     padding: 4px;
+     text-decoration: none;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+     white-space: nowrap;
+     cursor: pointer;
+     margin-bottom: 10px;
+}
+
+.button-64:active,
+.button-64:hover {
+     outline: 0;
+}
+
+.button-64 .span {
+     background-color: var(--main-color1);
+     padding: 10px 11px;
+     border-radius: 30px;
+     width: 80%;
+     height: 80%;
+     transition: 300ms;
+     color: white;
+}
+
+.button-64:hover .span {
+     background: none;
+}
+
+@media (min-width: 768px) {
+     .button-64 {
+          font-size: 15px;
+          min-width: 180px;
+     }
+}
+
+
+/*Mision-Vision*/
+.titulo-misVis {
+     width: 100vw;
+     height: 35vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background: url(../img/fondoRpC.jpg);
+}
+
+.misVis-texto h1 {
+     font-size: 60px;
+}
+
+.content-Misión {
+     display: flex;
+     margin: 120px;
+}
+
+.Misión-texto {
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 150px;
+}
+
+.Misión-texto h2 {
+     font-size: 50px;
+     color: var(--main-color1);
+}
+
+.Misión-texto p {
+     font-size: 20px;
+}
+
+.content-Misión img {
+     display: flex;
+     margin: 30px;
+}
+
+/*vision*/
+.content-Visión {
+     display: flex;
+     margin: 120px;
+}
+
+.Visión-texto {
+     margin-top: 20px;
+     margin-left: 200px;
+     margin-right: 20px;
+}
+
+.Visión-texto h2 {
+     font-size: 50px;
+     color: rgba(47, 114, 3, 0.966)
+}
+
+.Visión-texto p {
+     font-size: 20px;
+}
+
+.content-Visión img {
+     display: flex;
+     margin: 50px;
+}
+
+/*Proposito*/
+.content-Propósito {
+     display: flex;
+     margin: 120px;
+}
+
+.Propósito-texto {
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 150px;
+}
+
+.Propósito-texto h2 {
+     font-size: 50px;
+     color: var(--main-color2);
+}
+
+.Propósito-texto p {
+     font-size: 20px;
+}
+
+.content-Propósito img {
+     display: flex;
+     margin: 30px;
 }
